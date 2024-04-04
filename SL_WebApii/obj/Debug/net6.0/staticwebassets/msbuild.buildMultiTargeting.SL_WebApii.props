@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\SL_WebApii.props" />
+</Project>
