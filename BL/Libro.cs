@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.EntityFrameworkCore;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -17,29 +18,30 @@ namespace BL
                 using (DL.BibliotecaContext context = new DL.BibliotecaContext())
                 {
 
-                    var query = (from Libro in context.Libros
-                                 join Genero in context.Generos on Libro.IdGenero equals Genero.IdGenero
-                                 join Autor in context.Autors on Libro.IdAutor equals Autor.IdAutor
-                                 join Editorial in context.Editorials on Libro.IdEditorial equals Editorial.IdEditorial
+                     var registros = context.Libros.FromSqlRaw("EXECUTE dbo.LibroGetAll").ToList();
 
-                                 select new
-                                 {
-                                     IdLibro = Libro.IdLibro,
-                                     Nombre = Libro.Nombre,
-                                     IdGenero = Genero.IdGenero,
-                                     NumeroPaginas = Libro.NumeroPaginas,
-                                     IdAutor = Autor.IdAutor,   
-                                     IdEditorial = Editorial.IdEditorial
+                    //var registros = (from Libro in context.Libros
+                    //             join Genero in context.Generos on Libro.IdGenero equals Genero.IdGenero
+                    //             join Autor in context.Autors on Libro.IdAutor equals Autor.IdAutor
+                    //             join Editorial in context.Editorials on Libro.IdEditorial equals Editorial.IdEditorial
 
-                                 }).ToList();
+                    //             select new
+                    //             {
+                    //                 IdLibro = Libro.IdLibro,
+                    //                 Nombre = Libro.Nombre,
+                    //                 IdGenero = Genero.IdGenero,
+                    //                 NumeroPaginas = Libro.NumeroPaginas,
+                    //                 IdAutor = Autor.IdAutor,
+                    //                 IdEditorial = Editorial.IdEditorial
 
+                    //             }).ToList();
 
-                    if (query != null)
+                    if (registros != null)
                     {
                         ML.Libro libro1 = new ML.Libro();
                         libro1.Libros = new List<object>();
 
-                        foreach (var registro in query)
+                        foreach (var registro in registros)
                         {
                             //Instanciar el objeto
                             ML.Libro libro = new ML.Libro();

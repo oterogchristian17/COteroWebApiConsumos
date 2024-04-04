@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.EntityFrameworkCore;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -15,14 +16,8 @@ namespace BL
             {
                 using (DL.BibliotecaContext context = new DL.BibliotecaContext())
                 {
-                    var registros = (from lector in context.Lectors
-                                     select new
-                                     {
-                                         IdLector = lector.IdLector,
-                                         Nombre = lector.Nombre,
-                                         ApellidoPaterno = lector.ApellidoPaterno,
-                                         ApellidoMaterno = lector.ApellidoMaterno,
-                                     }).ToList();
+
+                    var registros = context.Lectors.FromSqlRaw("EXECUTE dbo.LectorGetAll").ToList();
 
                     if (registros.Count > 0)
                     {

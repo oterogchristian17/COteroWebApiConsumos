@@ -21,15 +21,9 @@ namespace BL
             {
                 using (DL.BibliotecaContext context = new DL.BibliotecaContext())
                 {
-                    var registros = (from autor in context.Autors
-                                     select new
-                                     {
-                                         IdAutor = autor.IdAutor,
-                                         Nombre = autor.Nombre,
-                                         ApellidoPaterno = autor.ApellidoPaterno,
-                                         ApellidoMaterno = autor.ApellidoMaterno,
-                                     }).ToList();
 
+                    var registros = context.Autors.FromSqlRaw("EXECUTE dbo.AutorGetAll").ToList();
+                  
                     if (registros.Count > 0)
                     {
                         ML.Autor autor1 = new ML.Autor();
