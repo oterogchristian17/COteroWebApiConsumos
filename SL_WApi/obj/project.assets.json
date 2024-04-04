@@ -3469,11 +3469,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\digis\\Documents\\Christian Otero Garcia\\COteroBibliotecaWebService\\SL_WApi\\SL_WApi.csproj",
+      "projectUniqueName": "C:\\Users\\digis\\Documents\\Christian Otero Garcia\\COteroWebApiConsumosGit\\COteroWebApiConsumos\\SL_WApi\\SL_WApi.csproj",
       "projectName": "SL_WApi",
-      "projectPath": "C:\\Users\\digis\\Documents\\Christian Otero Garcia\\COteroBibliotecaWebService\\SL_WApi\\SL_WApi.csproj",
+      "projectPath": "C:\\Users\\digis\\Documents\\Christian Otero Garcia\\COteroWebApiConsumosGit\\COteroWebApiConsumos\\SL_WApi\\SL_WApi.csproj",
       "packagesPath": "C:\\Users\\digis\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\digis\\Documents\\Christian Otero Garcia\\COteroBibliotecaWebService\\SL_WApi\\obj\\",
+      "outputPath": "C:\\Users\\digis\\Documents\\Christian Otero Garcia\\COteroWebApiConsumosGit\\COteroWebApiConsumos\\SL_WApi\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -3495,11 +3495,11 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\digis\\Documents\\Christian Otero Garcia\\COteroBibliotecaWebService\\BL\\BL.csproj": {
-              "projectPath": "C:\\Users\\digis\\Documents\\Christian Otero Garcia\\COteroBibliotecaWebService\\BL\\BL.csproj"
+            "C:\\Users\\digis\\Documents\\Christian Otero Garcia\\COteroWebApiConsumosGit\\COteroWebApiConsumos\\BL\\BL.csproj": {
+              "projectPath": "C:\\Users\\digis\\Documents\\Christian Otero Garcia\\COteroWebApiConsumosGit\\COteroWebApiConsumos\\BL\\BL.csproj"
             },
-            "C:\\Users\\digis\\Documents\\Christian Otero Garcia\\COteroBibliotecaWebService\\ML\\ML.csproj": {
-              "projectPath": "C:\\Users\\digis\\Documents\\Christian Otero Garcia\\COteroBibliotecaWebService\\ML\\ML.csproj"
+            "C:\\Users\\digis\\Documents\\Christian Otero Garcia\\COteroWebApiConsumosGit\\COteroWebApiConsumos\\ML\\ML.csproj": {
+              "projectPath": "C:\\Users\\digis\\Documents\\Christian Otero Garcia\\COteroWebApiConsumosGit\\COteroWebApiConsumos\\ML\\ML.csproj"
             }
           }
         }

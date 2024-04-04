@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\digis\\Documents\\Christian Otero Garcia\\COteroBibliotecaWebService\\BL\\BL.csproj": {}
+    "C:\\Users\\digis\\Documents\\Christian Otero Garcia\\COteroWebApiConsumosGit\\COteroWebApiConsumos\\BL\\BL.csproj": {}
   },
   "projects": {
-    "C:\\Users\\digis\\Documents\\Christian Otero Garcia\\COteroBibliotecaWebService\\BL\\BL.csproj": {
+    "C:\\Users\\digis\\Documents\\Christian Otero Garcia\\COteroWebApiConsumosGit\\COteroWebApiConsumos\\BL\\BL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\digis\\Documents\\Christian Otero Garcia\\COteroBibliotecaWebService\\BL\\BL.csproj",
+        "projectUniqueName": "C:\\Users\\digis\\Documents\\Christian Otero Garcia\\COteroWebApiConsumosGit\\COteroWebApiConsumos\\BL\\BL.csproj",
         "projectName": "BL",
-        "projectPath": "C:\\Users\\digis\\Documents\\Christian Otero Garcia\\COteroBibliotecaWebService\\BL\\BL.csproj",
+        "projectPath": "C:\\Users\\digis\\Documents\\Christian Otero Garcia\\COteroWebApiConsumosGit\\COteroWebApiConsumos\\BL\\BL.csproj",
         "packagesPath": "C:\\Users\\digis\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\digis\\Documents\\Christian Otero Garcia\\COteroBibliotecaWebService\\BL\\obj\\",
+        "outputPath": "C:\\Users\\digis\\Documents\\Christian Otero Garcia\\COteroWebApiConsumosGit\\COteroWebApiConsumos\\BL\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -32,11 +32,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\digis\\Documents\\Christian Otero Garcia\\COteroBibliotecaWebService\\DL\\DL.csproj": {
-                "projectPath": "C:\\Users\\digis\\Documents\\Christian Otero Garcia\\COteroBibliotecaWebService\\DL\\DL.csproj"
+              "C:\\Users\\digis\\Documents\\Christian Otero Garcia\\COteroWebApiConsumosGit\\COteroWebApiConsumos\\DL\\DL.csproj": {
+                "projectPath": "C:\\Users\\digis\\Documents\\Christian Otero Garcia\\COteroWebApiConsumosGit\\COteroWebApiConsumos\\DL\\DL.csproj"
               },
-              "C:\\Users\\digis\\Documents\\Christian Otero Garcia\\COteroBibliotecaWebService\\ML\\ML.csproj": {
-                "projectPath": "C:\\Users\\digis\\Documents\\Christian Otero Garcia\\COteroBibliotecaWebService\\ML\\ML.csproj"
+              "C:\\Users\\digis\\Documents\\Christian Otero Garcia\\COteroWebApiConsumosGit\\COteroWebApiConsumos\\ML\\ML.csproj": {
+                "projectPath": "C:\\Users\\digis\\Documents\\Christian Otero Garcia\\COteroWebApiConsumosGit\\COteroWebApiConsumos\\ML\\ML.csproj"
               }
             }
           }
@@ -92,14 +92,14 @@
         }
       }
     },
-    "C:\\Users\\digis\\Documents\\Christian Otero Garcia\\COteroBibliotecaWebService\\DL\\DL.csproj": {
+    "C:\\Users\\digis\\Documents\\Christian Otero Garcia\\COteroWebApiConsumosGit\\COteroWebApiConsumos\\DL\\DL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\digis\\Documents\\Christian Otero Garcia\\COteroBibliotecaWebService\\DL\\DL.csproj",
+        "projectUniqueName": "C:\\Users\\digis\\Documents\\Christian Otero Garcia\\COteroWebApiConsumosGit\\COteroWebApiConsumos\\DL\\DL.csproj",
         "projectName": "DL",
-        "projectPath": "C:\\Users\\digis\\Documents\\Christian Otero Garcia\\COteroBibliotecaWebService\\DL\\DL.csproj",
+        "projectPath": "C:\\Users\\digis\\Documents\\Christian Otero Garcia\\COteroWebApiConsumosGit\\COteroWebApiConsumos\\DL\\DL.csproj",
         "packagesPath": "C:\\Users\\digis\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\digis\\Documents\\Christian Otero Garcia\\COteroBibliotecaWebService\\DL\\obj\\",
+        "outputPath": "C:\\Users\\digis\\Documents\\Christian Otero Garcia\\COteroWebApiConsumosGit\\COteroWebApiConsumos\\DL\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -173,14 +173,14 @@
         }
       }
     },
-    "C:\\Users\\digis\\Documents\\Christian Otero Garcia\\COteroBibliotecaWebService\\ML\\ML.csproj": {
+    "C:\\Users\\digis\\Documents\\Christian Otero Garcia\\COteroWebApiConsumosGit\\COteroWebApiConsumos\\ML\\ML.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\digis\\Documents\\Christian Otero Garcia\\COteroBibliotecaWebService\\ML\\ML.csproj",
+        "projectUniqueName": "C:\\Users\\digis\\Documents\\Christian Otero Garcia\\COteroWebApiConsumosGit\\COteroWebApiConsumos\\ML\\ML.csproj",
         "projectName": "ML",
-        "projectPath": "C:\\Users\\digis\\Documents\\Christian Otero Garcia\\COteroBibliotecaWebService\\ML\\ML.csproj",
+        "projectPath": "C:\\Users\\digis\\Documents\\Christian Otero Garcia\\COteroWebApiConsumosGit\\COteroWebApiConsumos\\ML\\ML.csproj",
         "packagesPath": "C:\\Users\\digis\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\digis\\Documents\\Christian Otero Garcia\\COteroBibliotecaWebService\\ML\\obj\\",
+        "outputPath": "C:\\Users\\digis\\Documents\\Christian Otero Garcia\\COteroWebApiConsumosGit\\COteroWebApiConsumos\\ML\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

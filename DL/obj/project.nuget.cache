@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "RktWMGTZcLMD9vGqOWCdMOkNUhcV3rQEduK5CEReXqypLvyllxOzKla4OcHIvyNYw7KaX1NjL6JGtakSI8PsYw==",
+  "dgSpecHash": "IMqt5v7mCbRqOy9XPT7SaCFBqBi6vFpmCU6L6Sz0qT8+YnYNOx22BF+dtwGKeURyAWJAnhGcQSDU+MhCKlxyZg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\digis\\Documents\\Christian Otero Garcia\\COteroBibliotecaWebService\\DL\\DL.csproj",
+  "projectFilePath": "C:\\Users\\digis\\Documents\\Christian Otero Garcia\\COteroWebApiConsumosGit\\COteroWebApiConsumos\\DL\\DL.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\digis\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\digis\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",

@@ -12,7 +12,8 @@ namespace ML
         public int IdLibro { get; set; }
         public string Nombre { get; set; }
         public int NumPaginas { get; set; }
-       
+        public List<object> Libros { get; set; }
+
 
         //Propiedades de Navegacion
         public ML.Genero Genero { get; set; }

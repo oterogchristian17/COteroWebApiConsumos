@@ -9,65 +9,75 @@ namespace BL
     public class Libro
     {
 
-        //public static Dictionary<string, object> GetAll()
-        //{
-        //    Dictionary<string, object> diccionario = new Dictionary<string, object> { { "Libro", null }, { "Exepcion", "" }, { "Resultado", false } };
-        //    try
-        //    {
-        //        using (DL.BibliotecaContext context = new DL.BibliotecaContext())
-        //        {
-        //            var registros = (from libro in context.Libros
-        //                             select new
-        //                             {
-        //                                 IdAutor = autor.IdAutor,
-        //                                 Nombre = autor.Nombre,
-        //                                 ApellidoPaterno = autor.ApellidoPaterno,
-        //                                 ApellidoMaterno = autor.ApellidoMaterno,
-        //                             }).ToList();
+        public static Dictionary<string, object> GetAll()
+        {
+            Dictionary<string, object> diccionario = new Dictionary<string, object> { { "Libro", null }, { "Exepcion", "" }, { "Resultado", false } };
+            try
+            {
+                using (DL.BibliotecaContext context = new DL.BibliotecaContext())
+                {
 
-        //            if (registros.Count > 0)
-        //            {
-        //                ML.Autor autor1 = new ML.Autor();
-        //                autor1.Autores = new List<object>();
+                    var query = (from Libro in context.Libros
+                                 join Genero in context.Generos on Libro.IdGenero equals Genero.IdGenero
+                                 join Autor in context.Autors on Libro.IdAutor equals Autor.IdAutor
+                                 join Editorial in context.Editorials on Libro.IdEditorial equals Editorial.IdEditorial
 
-        //                foreach (var registro in registros)
-        //                {
-        //                    autor1.IdAutor = registro.IdAutor;
-        //                    autor1.Nombre = registro.Nombre;
-        //                    autor1.ApellidoPaterno = registro.ApellidoPaterno;
-        //                    autor1.ApellidoMaterno = registro.ApellidoMaterno;
+                                 select new
+                                 {
+                                     IdLibro = Libro.IdLibro,
+                                     Nombre = Libro.Nombre,
+                                     IdGenero = Genero.IdGenero,
+                                     NumeroPaginas = Libro.NumeroPaginas,
+                                     IdAutor = Autor.IdAutor,   
+                                     IdEditorial = Editorial.IdEditorial
 
-        //                    autor1.Autores.Add(registro);
-        //                }
-        //                diccionario["Resultado"] = true;
-        //                diccionario["Autor"] = autor1;
-        //            }
-        //            else
-        //            {
-
-        //            }
-        //        }
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        diccionario["Excepcion"] = ex;
-
-        //    }
-        //    return diccionario;
-        //}
+                                 }).ToList();
 
 
+                    if (query != null)
+                    {
+                        ML.Libro libro1 = new ML.Libro();
+                        libro1.Libros = new List<object>();
 
+                        foreach (var registro in query)
+                        {
+                            //Instanciar el objeto
+                            ML.Libro libro = new ML.Libro();
 
+                            libro1.IdLibro = registro.IdLibro;
+                            libro1.Nombre = registro.Nombre;
+                            libro1.NumPaginas = registro.NumeroPaginas;
+
+                            //AQUI VA LA PROPIEDAD DE NAVEGACION
+                            libro1.Genero = new ML.Genero();
+                            libro1.Genero.IdGenero = registro.IdGenero;
+
+                            libro1.Autor = new ML.Autor();
+                            libro1.Autor.IdAutor = registro.IdAutor;
+
+                            libro1.Editorial = new ML.Editorial();
+                            libro1.Editorial.IdEditorial = registro.IdEditorial;
 
 
 
+                            libro1.Libros.Add(registro);
+                        }
+                        diccionario["Resultado"] = true;
+                        diccionario["Libro"] = libro1;
+                    }
+                    else
+                    {
+
+                    }
+                }
+            }
+            catch (Exception)
+            {
 
 
-
-
-
-
+            }
+            return diccionario;
+        }
 
     }
 }
